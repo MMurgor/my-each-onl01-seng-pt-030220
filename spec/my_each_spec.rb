@@ -21,6 +21,7 @@ puts word
     words = ['hi', 'hello', 'bye', 'goodbye']
     expect($stdout).to receive(:puts).exactly(words.length).times
     my_each(words) do |word|
+      puts word
     end
   end
 
