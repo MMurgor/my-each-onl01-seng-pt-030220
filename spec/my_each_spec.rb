@@ -1,7 +1,8 @@
 require_relative 'spec_helper'
 require 'pry'
 
-describe "my_each" do
+describe "my_each" do ("while")
+puts word
   file = File.read('./my_each.rb')
 
   it "does not call on .each" do
@@ -89,7 +90,7 @@ describe "my_each" do
 
     tas = ['arel', 'jon', 'logan', 'spencer']
 
-    my_each(tas) do |ta|
+    my_each(words) do |item|
       # ta cannot be an array
       expect(ta.kind_of?(Array)).to eq(false)
       expect(ta.kind_of?(String)).to eq(true)
